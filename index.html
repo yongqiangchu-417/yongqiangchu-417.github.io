@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yongqiang Chu</title>
+<meta name="description" content="Yongqiang Chu is the Childress Klein Distinguished Professor of Finance at UNC Charlotte and Director of the Childress Klein Center for Real Estate. Research on corporate finance, banking, real estate, and mortgage lending.">
+<meta property="og:title" content="Yongqiang Chu">
+<meta property="og:description" content="Childress Klein Distinguished Professor of Finance, UNC Charlotte. Research on corporate finance, banking, and real estate.">
+<meta property="og:type" content="profile">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yongqiang Chu",
+  "alternateName": "褚勇强",
+  "jobTitle": "Childress Klein Distinguished Professor and Professor of Finance",
+  "worksFor": { "@type": "CollegeOrUniversity", "name": "University of North Carolina at Charlotte" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Wisconsin–Madison" },
+    { "@type": "CollegeOrUniversity", "name": "National University of Singapore" },
+    { "@type": "CollegeOrUniversity", "name": "Peking University" }
+  ],
+  "email": "mailto:yongqiang.chu@uncc.edu",
+  "knowsAbout": ["Corporate finance", "Banking", "Real estate", "Mortgage lending", "Household finance"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9201 University City Blvd",
+    "addressLocality": "Charlotte",
+    "addressRegion": "NC",
+    "postalCode": "28223",
+    "addressCountry": "US"
+  }
+}
+</script>
+<style>
+/* Layout: masthead, then one reading column (60rem). Papers are set as a ledger:
+   a narrow mono gutter (year or status) beside the citation. */
+:root {
+  --paper: #fbfcfa;
+  --panel: #eef3ef;
+  --ink: #14201a;
+  --muted: #56645c;
+  --rule: #d8e0da;
+  --pine: #005035;
+  --pine-ink: #ffffff;
+  --pine-soft: #e2ede7;
+  --gold: #74622a;
+  --gold-soft: #f2ecd8;
+
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --font-cjk: "Noto Serif SC", "Source Han Serif SC", "Songti SC", STSong, SimSun, serif;
+
+  --bar-h: 3.5rem;
+  --pad-l: max(clamp(16px, 4vw, 40px), env(safe-area-inset-left, 0px));
+  --pad-r: max(clamp(16px, 4vw, 40px), env(safe-area-inset-right, 0px));
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0d1310;
+    --panel: #151e19;
+    --ink: #e3eae5;
+    --muted: #98a79f;
+    --rule: #25312b;
+    --pine: #82c9a3;
+    --pine-ink: #0d1310;
+    --pine-soft: #172c22;
+    --gold: #d3c087;
+    --gold-soft: #29261a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0d1310;
+  --panel: #151e19;
+  --ink: #e3eae5;
+  --muted: #98a79f;
+  --rule: #25312b;
+  --pine: #82c9a3;
+  --pine-ink: #0d1310;
+  --pine-soft: #172c22;
+  --gold: #d3c087;
+  --gold-soft: #29261a;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bar-h) + 1rem); -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 30; background: var(--paper);
+}
+img { max-width: 100%; display: block; }
+a { color: var(--pine); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--pine); outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p { margin: 0; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.wrap { max-width: 60rem; margin-inline: auto; padding-left: var(--pad-l); padding-right: var(--pad-r); }
+
+/* ---------- Top bar ---------- */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: var(--bar-h); }
+.brand {
+  font: 600 1.1875rem/1 var(--font-display); color: var(--ink); text-decoration: none;
+  letter-spacing: -0.005em; white-space: nowrap;
+}
+.nav { display: flex; gap: 1.5rem; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a {
+  font-size: 0.875rem; font-weight: 500; color: var(--muted); text-decoration: none;
+  white-space: nowrap; padding-block: 0.5rem;
+}
+.nav a:hover { color: var(--ink); }
+.nav a.nav-cv { color: var(--pine); }
+@media (max-width: 560px) {
+  .brand { display: none; }
+  .topbar .wrap { justify-content: flex-start; }
+  .nav { gap: 1.1rem; }
+  .nav-long { display: none; }
+}
+
+/* ---------- Intro ---------- */
+.intro {
+  display: grid; grid-template-columns: 13.5rem minmax(0, 1fr); gap: 2.75rem;
+  padding-block: 3.5rem 3rem; align-items: start;
+}
+.portrait { margin: 0; display: flex; gap: 0.75rem; align-items: stretch; }
+.frame {
+  position: relative; flex: 1; aspect-ratio: 4 / 5; max-width: 100%;
+  background: var(--panel); overflow: hidden; border-radius: 2px;
+}
+.frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+.monogram {
+  display: none; position: absolute; inset: 0; place-items: center;
+  font: 500 3.25rem/1 var(--font-display); color: var(--pine); letter-spacing: 0.02em;
+}
+.frame.no-photo .monogram { display: grid; }
+.seal {
+  writing-mode: vertical-rl; font: 500 1.3125rem/1 var(--font-cjk); color: var(--pine);
+  letter-spacing: 0.4em; padding-block: 0.6rem 0.2rem;
+  border-block: 1px solid var(--rule); align-self: flex-start;
+}
+.name {
+  margin: 0; font: 500 clamp(2.5rem, 6vw, 3.6rem)/1.02 var(--font-display);
+  letter-spacing: -0.02em; font-variation-settings: "opsz" 72;
+}
+.roles { margin-top: 0.9rem; display: grid; gap: 0.15rem; font-size: 1rem; color: var(--muted); }
+.roles span:first-child { color: var(--ink); font-weight: 500; }
+.bio { margin-top: 1.5rem; display: grid; gap: 0.85rem; max-width: 38rem; }
+.facts {
+  margin: 1.75rem 0 0; display: grid; grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.55rem 1.25rem; max-width: 38rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+}
+.facts dt {
+  font: 500 0.71875rem/1.9 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+}
+.facts dd { margin: 0; font-size: 0.9375rem; }
+.facts dd span { display: block; }
+.actions { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font: 600 0.875rem/1 var(--font-body); padding: 0.75rem 1.1rem; border-radius: 3px;
+  text-decoration: none; border: 1px solid var(--pine);
+}
+.btn svg { width: 1rem; height: 1rem; flex: none; }
+.btn-primary { background: var(--pine); color: var(--pine-ink); }
+.btn-primary:hover { background: color-mix(in srgb, var(--pine) 86%, var(--ink)); }
+.btn-ghost { color: var(--pine); background: transparent; }
+.btn-ghost:hover { background: var(--pine-soft); }
+
+@media (max-width: 720px) {
+  .intro { grid-template-columns: 1fr; gap: 1.75rem; padding-block: 2rem 2.5rem; }
+  .portrait { max-width: 10.5rem; }
+}
+@media (max-width: 420px) {
+  .facts { grid-template-columns: 1fr; gap: 0.1rem; }
+  .facts dd { margin-bottom: 0.6rem; }
+}
+
+/* ---------- Sections ---------- */
+.section { padding-block: 3rem; border-top: 1px solid var(--rule); }
+.section-head { display: grid; gap: 0.5rem; margin-bottom: 1.75rem; }
+h2 {
+  margin: 0; font: 500 2rem/1.15 var(--font-display); letter-spacing: -0.015em;
+  display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;
+}
+h3 {
+  margin: 2.5rem 0 0.25rem; font: 600 0.78125rem/1.4 var(--font-mono); text-transform: uppercase;
+  letter-spacing: 0.09em; color: var(--muted); display: flex; gap: 0.6rem; align-items: baseline;
+}
+.count { font: 400 0.8125rem/1 var(--font-mono); color: var(--muted); letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+.lede { color: var(--muted); max-width: 40rem; }
+
+/* ---------- Filters ---------- */
+.filters { display: none; }
+.js .filters {
+  display: grid; gap: 0.75rem; position: sticky; top: calc(var(--bar-h) + env(safe-area-inset-top, 0px)); z-index: 10;
+  background: var(--paper); padding-block: 0.9rem; border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.5rem;
+}
+.filter-row { display: flex; gap: 0.75rem 1rem; align-items: center; flex-wrap: wrap; }
+.search { position: relative; flex: 1 1 16rem; max-width: 24rem; }
+.search svg { position: absolute; left: 0.7rem; top: 50%; width: 1rem; height: 1rem; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.search input {
+  width: 100%; font: 400 0.9375rem/1.2 var(--font-body); color: var(--ink);
+  background: var(--panel); border: 1px solid transparent; border-radius: 3px;
+  padding: 0.6rem 0.75rem 0.6rem 2.1rem;
+}
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; border-color: var(--pine); background: var(--paper); }
+.filter-status { font: 400 0.8125rem/1.3 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.reset {
+  font: 500 0.8125rem/1 var(--font-body); color: var(--pine); background: none; border: 0;
+  padding: 0.35rem 0; cursor: pointer; text-decoration: underline; text-underline-offset: 0.2em;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip {
+  font: 500 0.8125rem/1 var(--font-body); color: var(--ink); background: transparent;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 0.42rem 0.75rem; cursor: pointer;
+  display: inline-flex; gap: 0.4rem; align-items: baseline;
+}
+.chip .n { font: 400 0.71875rem/1 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip:hover { border-color: var(--pine); }
+.chip[aria-pressed="true"] { background: var(--pine); border-color: var(--pine); color: var(--pine-ink); }
+.chip[aria-pressed="true"] .n { color: inherit; opacity: 0.8; }
+/* While the filter bar is sticky, anchors inside the list must clear it too. */
+.js #working-papers, .js #publications { scroll-margin-top: 8.5rem; }
+@media (max-width: 720px) {
+  .js .filters { position: static; }
+  .js #working-papers, .js #publications { scroll-margin-top: 0; }
+}
+
+/* ---------- Paper ledger ---------- */
+.papers { list-style: none; margin: 0; padding: 0; }
+.paper {
+  display: grid; grid-template-columns: 6.75rem minmax(0, 1fr); gap: 0 1.5rem;
+  padding-block: 1.15rem; border-top: 1px solid var(--rule);
+}
+.papers .paper:first-child { border-top: 0; }
+.gutter {
+  font: 400 0.78125rem/1.5 var(--font-mono); color: var(--muted); padding-top: 0.28rem;
+  font-variant-numeric: tabular-nums;
+}
+.gutter.status { color: var(--gold); font-weight: 500; }
+.gutter abbr { text-decoration: none; }
+.paper.repeat .gutter { opacity: 0; }
+.paper h4 {
+  margin: 0; font: 500 1.1875rem/1.32 var(--font-display); letter-spacing: -0.005em;
+  font-variation-settings: "opsz" 24; text-wrap: pretty;
+}
+.paper h4 a { color: var(--ink); text-decoration: none; background: linear-gradient(var(--pine), var(--pine)) 0 100% / 0 1px no-repeat; transition: background-size 0.2s; }
+.paper h4 a:hover { background-size: 100% 1px; }
+.authors { margin-top: 0.2rem; font-size: 0.9375rem; color: var(--muted); }
+.venue { margin-top: 0.15rem; font-size: 0.9375rem; }
+.venue em { font-style: italic; }
+.venue .note { color: var(--gold); }
+.finding { margin-top: 0.5rem; max-width: 40rem; }
+.notes { margin: 0.55rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.2rem; font-size: 0.875rem; color: var(--muted); }
+.notes .award { color: var(--gold); }
+.notes .label { font: 500 0.71875rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.07em; margin-right: 0.4rem; }
+.links { margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.links a {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font: 500 0.75rem/1 var(--font-mono); letter-spacing: 0.02em; color: var(--ink); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 3px; padding: 0.38rem 0.55rem;
+}
+.links a:hover { border-color: var(--pine); color: var(--pine); }
+.links a.listen { color: var(--pine); background: var(--pine-soft); border-color: transparent; }
+.links svg { width: 0.75rem; height: 0.75rem; flex: none; }
+.empty { padding-block: 1rem; color: var(--muted); font-style: italic; }
+
+@media (max-width: 640px) {
+  .paper { grid-template-columns: 1fr; }
+  .gutter { padding-top: 0; margin-bottom: 0.2rem; }
+  .gutter:empty { display: none; }
+  .paper.repeat .gutter { opacity: 1; }
+}
+
+/* ---------- Audio ---------- */
+.tracks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; }
+.tracks li { border-top: 1px solid var(--rule); }
+.track { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 0.85rem; padding-block: 1rem; text-decoration: none; color: var(--ink); align-items: start; }
+.track .play {
+  width: 2.25rem; height: 2.25rem; border-radius: 50%; display: grid; place-items: center;
+  background: var(--pine-soft); color: var(--pine); transition: background 0.15s, color 0.15s;
+}
+.track .play svg { width: 0.8rem; height: 0.8rem; margin-left: 2px; }
+.track:hover .play { background: var(--pine); color: var(--pine-ink); }
+.track-title { display: block; font: 500 1.0625rem/1.3 var(--font-display); }
+.track-meta { display: block; margin-top: 0.2rem; font-size: 0.8125rem; color: var(--muted); }
+@media (max-width: 640px) { .tracks { grid-template-columns: 1fr; } }
+
+/* ---------- Students ---------- */
+.students { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; }
+.students li { border-top: 1px solid var(--rule); padding-block: 0.8rem; display: grid; gap: 0.1rem; }
+.students strong { font-weight: 600; }
+.students span { font-size: 0.9375rem; color: var(--muted); }
+@media (max-width: 640px) { .students { grid-template-columns: 1fr; } }
+
+/* ---------- CV & contact ---------- */
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 3rem; }
+.contact-grid h3 { margin-top: 0; margin-bottom: 0.75rem; }
+.contact-grid p + p { margin-top: 0.75rem; }
+address { font-style: normal; }
+.email { font: 500 1rem/1.4 var(--font-mono); word-break: break-all; }
+@media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
+
+footer { border-top: 1px solid var(--rule); padding-block: 1.75rem 2.5rem; font-size: 0.8125rem; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Yongqiang Chu</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#audio">Audio</a>
+      <a href="#students">Students</a>
+      <a class="nav-cv" href="#cv">CV<span class="nav-long"> &amp; contact</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <!-- ===================== INTRO ===================== -->
+    <section class="intro" aria-labelledby="name">
+      <figure class="portrait">
+        <div class="frame">
+          <!-- Save your headshot in this folder as photo.jpg (portrait, about 800×1000 px). Until then a monogram shows. -->
+          <img src="photo.jpg" alt="Portrait of Yongqiang Chu" width="800" height="1000"
+               onerror="this.parentNode.classList.add('no-photo'); this.remove();">
+          <span class="monogram" aria-hidden="true">YC</span>
+        </div>
+        <span class="seal" lang="zh-Hans" aria-hidden="true">褚勇强</span>
+      </figure>
+
+      <div>
+        <h1 class="name" id="name">Yongqiang Chu<span class="sr-only" lang="zh-Hans"> (褚勇强)</span></h1>
+        <p class="roles">
+          <span>Childress Klein Distinguished Professor · Professor of Finance</span>
+          <span>Director, Childress Klein Center for Real Estate</span>
+          <span>Belk College of Business, University of North Carolina at Charlotte</span>
+        </p>
+
+        <div class="bio">
+          <p>I study corporate finance, banking, and real estate. My recent work looks at how political beliefs and culture shape mortgage lending, housing markets, and corporate decisions, and at how AI and fintech change who gets credit.</p>
+          <p>My papers appear in the <em>Journal of Finance</em>, the <em>Journal of Financial Economics</em>, the <em>Review of Financial Studies</em>, <em>Management Science</em>, and the <em>Journal of Financial and Quantitative Analysis</em>. Before joining UNC Charlotte in 2018, I spent ten years on the finance faculty at the University of South Carolina.</p>
+        </div>
+
+        <dl class="facts">
+          <dt>Fields</dt>
+          <dd>Corporate finance · Banking · Real estate</dd>
+          <dt>Education</dt>
+          <dd>
+            <span>Ph.D., University of Wisconsin–Madison, 2008</span>
+            <span>M.Sc., National University of Singapore, 2004</span>
+            <span>B.S., Peking University, 2002</span>
+          </dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:yongqiang.chu@uncc.edu">yongqiang.chu@uncc.edu</a></dd>
+        </dl>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="cv.pdf">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 1.75h5.5L13 5.25v9H4z"/><path d="M9.25 1.75v3.75H13"/><path d="M6.25 9h4.5M6.25 11.5h4.5"/></svg>
+            CV (PDF)
+          </a>
+          <a class="btn btn-ghost" href="#research">Working papers</a>
+          <!-- Add your profile links here, e.g.:
+          <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+          <a class="btn btn-ghost" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=XXXX">SSRN</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section class="section" id="research" aria-labelledby="research-h">
+      <div class="section-head">
+        <h2 id="research-h">Research</h2>
+        <p class="lede">Working papers first, then published work. Search or pick a topic to narrow both lists.</p>
+      </div>
+
+      <div class="library">
+        <div class="filters" role="search" aria-label="Filter papers">
+          <div class="filter-row">
+            <div class="search">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.75"/><path d="m10.5 10.5 3.75 3.75"/></svg>
+              <label class="sr-only" for="q">Search papers</label>
+              <input id="q" type="search" placeholder="Search titles, coauthors, journals" autocomplete="off">
+            </div>
+            <p class="filter-status" id="filter-status" aria-live="polite"></p>
+            <button class="reset" id="reset" type="button" hidden>Clear filters</button>
+          </div>
+          <div class="chips" id="chips">
+            <button class="chip" type="button" data-topic="all" aria-pressed="true">All topics <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="banking" aria-pressed="false">Banking &amp; credit <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="housing" aria-pressed="false">Mortgages &amp; housing <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="politics" aria-pressed="false">Politics &amp; culture <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="corporate" aria-pressed="false">Corporate finance <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="inequality" aria-pressed="false">Discrimination &amp; diversity <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="climate" aria-pressed="false">Climate &amp; ESG <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="ai" aria-pressed="false">AI &amp; fintech <span class="n"></span></button>
+            <button class="chip" type="button" data-topic="pricing" aria-pressed="false">Asset pricing <span class="n"></span></button>
+          </div>
+        </div>
+
+        <h3 id="working-papers">Working papers <span class="count" data-count-for="wp-list">17</span></h3>
+        <ol class="papers" id="wp-list">
+
+          <li class="paper" data-topics="politics climate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7413640">Buying Green or Being Seen? Social Image, Impact, and Beliefs in Rooftop Solar</a></h4>
+              <p class="authors">with Rui Dai and Cong (Roman) Wang</p>
+              <p class="finding">Republicans are less likely than Democrats to install rooftop solar panels, and the gap is mostly driven by social image concerns.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7413640">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="ai housing inequality">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6342658">Artificial Intelligence and the Racial Gap in Mortgage Lending</a></h4>
+              <p class="authors">with Jing He, Leiju Qiu, and Daxuan Zhao</p>
+              <p class="finding">Mortgage lenders that adopt AI widen the racial gap in mortgage lending.</p>
+              <ul class="notes"><li><span class="label">Presented</span>NFA 2026</li></ul>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6342658">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking housing inequality">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4682458">Non-Bank Competition and Regressive Mortgage Credit Redistribution</a></h4>
+              <p class="authors">with David Zhang and Tim Zhang</p>
+              <p class="finding">Banks shift away from small-dollar mortgage originations when they face more non-bank competition.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4682458">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics ai corporate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6427178">Politically Coded: CEO Partisanship and Firm AI Adoption</a></h4>
+              <p class="authors">with Alicia Li and Ruiyao Zhu</p>
+              <p class="finding">Firms led by Republican CEOs hire more AI-related employees.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6427178">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6428183">Political Ideology and Durable Spending</a></h4>
+              <p class="authors">with Francesco D’Acunto, Janet Gao, Cong (Roman) Wang, and Yichen Wang</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6428183">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5813102">Negative Peer Effects and Partisan Bias in Investment Decisions</a></h4>
+              <p class="authors">with Young Jae Choi, Chih Ming Tan, and Ruiyao Zhu</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5813102">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics housing">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4959101">Political Alignment and Housing Transactions</a></h4>
+              <p class="authors">with Michael-Paul James and Roman Wang</p>
+              <p class="finding">People who share the sitting president’s party are more likely to buy and sell homes because they perceive less economic uncertainty. As a result, housing supply rises and house prices fall in neighborhoods with more aligned households.</p>
+              <ul class="notes"><li class="award"><span class="label">Award</span>Semifinalist, Best Paper Award, FMA 2025</li></ul>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4959101">SSRN</a>
+                <a class="listen" href="https://drive.google.com/file/d/1uEs7deEyV9n6wCJdCQIMW01wZChAamY-/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics housing inequality">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699507">Partisan Loan Officers and the Racial Gap in Mortgage Lending</a></h4>
+              <p class="authors">Solo-authored</p>
+              <p class="finding">Democratic loan officers originate more loans to minority borrowers by relaxing lending standards based on hard information.</p>
+              <ul class="notes"><li><span class="label">Presented</span>NFA 2026 · MFA 2026 · ASSA/AREUEA 2026 · FIFI Conference 2025 · Boulder Summer Conference on Consumer Financial Decision Making 2025</li></ul>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4699507">SSRN</a>
+                <a class="listen" href="https://drive.google.com/file/d/1RD3tdsTFZC6pIY9MsrGYxRFAM-vf9rd4/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics housing">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024897">The Cultural Origin of Household Debt</a></h4>
+              <p class="authors">with Xinming Li</p>
+              <p class="finding">Households’ ethnic origin affects how much leverage they take on when buying a home.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024897">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics corporate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024073">Political Homophily and Director Appointments</a></h4>
+              <p class="authors">with Ruiyao Zhu</p>
+              <p class="finding">Board candidates who share the CEO’s political views are more likely to be appointed.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024073">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="ai inequality banking">
+            <div class="gutter status">R&amp;R · <abbr title="Journal of Financial and Quantitative Analysis">JFQA</abbr></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4322257">FinTech and Gender Discrimination</a></h4>
+              <p class="authors">with Chunxing Sun, Bohui Zhang, and Daxuan Zhao</p>
+              <p class="finding">Algorithmic lending increases price discrimination against female borrowers.</p>
+              <ul class="notes"><li><span class="label">Presented</span>EFA 2023</li></ul>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4322257">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="climate corporate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3499373">Does Hedge Fund Activism Harm the Environment?</a></h4>
+              <p class="authors">with Leiju Qiu and Daxuan Zhao</p>
+              <p class="finding">Toxic chemical emissions fall after a firm is targeted by hedge fund activists.</p>
+              <ul class="notes"><li><span class="label">Press</span><a href="https://www.institutionalinvestor.com/article/b1jr4hhh7xrpsl/Are-Hedge-Funds-Good-at-Being-Green">Institutional Investor: “Are Hedge Funds Good at Being Green?”</a></li></ul>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3499373">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="climate corporate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4836384">Herding in Corporate Climate Risk Disclosure</a></h4>
+              <p class="authors">with Alfred Z. Liu and Angela X. Liu</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4836384">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3859439">Language Style Matching and CFO Turnover</a></h4>
+              <p class="authors">with Angela Liu</p>
+              <p class="finding">How closely a CFO’s language matches the CEO’s predicts CFO turnover.</p>
+              <ul class="notes"><li><span class="label">Presented</span>MFA 2022</li></ul>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3859439">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate pricing">
+            <div class="gutter status">R&amp;R · <abbr title="Management Science">MS</abbr></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3747035">Shareholder-Creditor Conflicts and Equity Lending</a></h4>
+              <p class="authors">with Luca Lin, Pedro Saffi, and Jason Sturgess</p>
+              <p class="finding">Shareholder-creditor conflict changes institutional investors’ incentives to lend shares to short sellers.</p>
+              <ul class="notes"><li><span class="label">Presented</span>MFA 2022</li></ul>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3747035">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3704020">Monetary Policy and Bank Concentration</a></h4>
+              <p class="authors">with Tim Zhang</p>
+              <p class="finding">Tighter monetary policy can increase bank concentration.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3704020">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking housing inequality">
+            <div class="gutter"></div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3461059">Banking Deregulation and Discrimination in Mortgage Lending</a></h4>
+              <p class="authors">with Xiaonan (Flora) Ma</p>
+              <p class="finding">Interstate banking deregulation increases entering banks’ discrimination against African American borrowers in mortgage origination.</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3461059">SSRN</a></div>
+            </div>
+          </li>
+        </ol>
+        <p class="empty" data-empty-for="wp-list" hidden>No working papers match.</p>
+
+        <!-- ===================== PUBLICATIONS ===================== -->
+        <h2 id="publications" style="margin-top:3.5rem">Publications <span class="count" data-count-total>36</span></h2>
+
+        <h3>UTD 24 / FT 50 journals <span class="count" data-count-for="pub-top">11</span></h3>
+        <ol class="papers" id="pub-top">
+
+          <li class="paper" data-topics="banking housing" data-year="forthcoming">
+            <div class="gutter">Forthcoming</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3792629">The Industry Expertise Channel of Mortgage Lending</a></h4>
+              <p class="authors">Chu, Y., Z. Xiao, and Y. Zheng</p>
+              <p class="venue"><em>Journal of Financial and Quantitative Analysis</em></p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3792629">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics corporate" data-year="2025">
+            <div class="gutter">2025</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4675362">The Color of Hedge Fund Activism</a></h4>
+              <p class="authors">Chu, Y., B. Huang, and C. Zhang</p>
+              <p class="venue"><em>Management Science</em> 71(6)</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4675362">SSRN</a>
+                <a class="listen" href="https://drive.google.com/file/d/1tPPkzg06j444zA_nh8xXTsR8moCAMkpx/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="inequality banking" data-year="2023">
+            <div class="gutter">2023</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3707537">Gender Diversity: From Wall Street to Main Street</a></h4>
+              <p class="authors">Chu, Y., X. Li, and D. Zhao</p>
+              <p class="venue"><em>Journal of Business Ethics</em> 188(1), 151–168</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3707537">SSRN</a>
+                <a class="listen" href="https://drive.google.com/file/d/1sLDNqHUjmow5XCIchFinqu5QfOfoSxU4/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate banking" data-year="2021">
+            <div class="gutter">2021</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2767017">Debt Renegotiation and Debt Overhang: Evidence from Lender Mergers</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Journal of Financial and Quantitative Analysis</em> 56(3), 995–1021</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2767017">SSRN</a>
+                <a href="https://doi.org/10.1017/S0022109019000760">Journal</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2020">
+            <div class="gutter">2020</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3400414">Bank Geographic Diversification and Systemic Risk: A Gravity-Deregulation Approach</a></h4>
+              <p class="authors">Chu, Y., S. Deng, and C. Xia</p>
+              <p class="venue"><em>Review of Financial Studies</em> 33(10), 4811–4838</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3400414">SSRN</a>
+                <a href="https://doi.org/10.1093/rfs/hhz148">Journal</a>
+                <a class="listen" href="https://drive.google.com/file/d/1m79QbphNPRb1W_7ePsWG5VtTXzzKvXwR/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="pricing" data-year="2020">
+            <div class="gutter">2020</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2696672">The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies</a></h4>
+              <p class="authors">Chu, Y., D. Hirshleifer, and L. Ma</p>
+              <p class="venue"><em>Journal of Finance</em> 75(5), 2631–2672</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2696672">SSRN</a>
+                <a href="https://www.nber.org/papers/w24144">NBER</a>
+                <a class="listen" href="https://drive.google.com/file/d/12ZKzBV1AyoHdqrK_ES5hsehgta1DYf0e/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2020">
+            <div class="gutter">2020</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2595187">Collateral, Ease of Repossession, and Leases: Evidence from Anti-Recharacterization Laws</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Management Science</em> 66(7), 2951–2974</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2595187">SSRN</a>
+                <a href="https://doi.org/10.1287/mnsc.2019.3338">Journal</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2019">
+            <div class="gutter">2019</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505029">Corporate Innovation along the Supply Chain</a></h4>
+              <p class="authors">Chu, Y., X. Tian, and W. Wang</p>
+              <p class="venue"><em>Management Science</em> 65(6) · <span class="note">Featured article of the issue</span></p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2505029">SSRN</a>
+                <a href="https://doi.org/10.1287/mnsc.2017.2924">Journal</a>
+                <a class="listen" href="https://drive.google.com/file/d/1pRVe79Vmneyf5pNsyNiJNH1sQ3nHUSxJ/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2019">
+            <div class="gutter">2019</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2462377">Bank Capital and Lending: Evidence from Syndicated Loans</a></h4>
+              <p class="authors">Chu, Y., D. Zhang, and Y. Zhao</p>
+              <p class="venue"><em>Journal of Financial and Quantitative Analysis</em> 54(2)</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2462377">SSRN</a>
+                <a href="https://doi.org/10.1017/S0022109018000698">Journal</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate banking" data-year="2018">
+            <div class="gutter">2018</div>
+            <div>
+              <h4><a href="https://academic.oup.com/rfs/article/31/8/3098/4724886?guestAccessKey=369d1f95-fdf3-41bf-be05-401580caa696">Shareholder-Creditor Conflict and Payout Policy: Evidence from Mergers between Lenders and Shareholders</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Review of Financial Studies</em> 31(8), 3098–3121</p>
+              <div class="links">
+                <a href="https://academic.oup.com/rfs/article/31/8/3098/4724886?guestAccessKey=369d1f95-fdf3-41bf-be05-401580caa696">Journal (free access)</a>
+                <a class="listen" href="https://drive.google.com/file/d/17dHIl5CR7eDABtzsohtlEGhiZy1PYyqQ/view"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg>Listen</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2012">
+            <div class="gutter">2012</div>
+            <div>
+              <h4><a href="https://doi.org/10.1016/j.jfineco.2012.05.010">Optimal Capital Structure, Bargaining, and the Supplier Market Structure</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Journal of Financial Economics</em> 106(2), 411–426</p>
+              <div class="links"><a href="https://doi.org/10.1016/j.jfineco.2012.05.010">Journal</a></div>
+            </div>
+          </li>
+        </ol>
+        <p class="empty" data-empty-for="pub-top" hidden>No papers in this group match.</p>
+
+        <h3>Other peer-reviewed journals <span class="count" data-count-for="pub-other">25</span></h3>
+        <ol class="papers" id="pub-other">
+
+          <li class="paper" data-topics="ai" data-year="forthcoming">
+            <div class="gutter">Forthcoming</div>
+            <div>
+              <h4>Automated Versus Manual Investments: Evidence from Peer-to-Peer Lending</h4>
+              <p class="authors">Chu, Y., C. Sun, and D. Zhao</p>
+              <p class="venue"><em>Journal of Empirical Finance</em></p>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2025">
+            <div class="gutter">2025</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3216923">Debt-Equity Simultaneous Holdings and Distress Resolution</a></h4>
+              <p class="authors">Chu, Y., H. Nguyen, J. Wang, W. Wang, and W. Wang</p>
+              <p class="venue"><em>Review of Corporate Finance Studies</em></p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3216923">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2025">
+            <div class="gutter">2025</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4181054">Product Market Competition and Disclosure Content Differentiation</a></h4>
+              <p class="authors">Chu, Y., B. Huang, H. Li, and J. Liu</p>
+              <p class="venue"><em>Journal of Business Finance and Accounting</em> 52(2)</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4181054">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2024">
+            <div class="gutter">2024</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3117257">Does Good News Cover Bad News?</a></h4>
+              <p class="authors">Meng, Q., S. Ke, D. Zhao, and Y. Chu</p>
+              <p class="venue"><em>Journal of Business Finance and Accounting</em> 51(7–8)</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3117257">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2024">
+            <div class="gutter">2024</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3658451">Agree to Disagree: Within-Syndicate Conflict and Syndicated Loan Contracting</a></h4>
+              <p class="authors">Chu, Y., L. Lin, and Z. Xiao</p>
+              <p class="venue"><em>Journal of Financial Intermediation</em> 57, 101065</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3658451">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2024">
+            <div class="gutter">2024</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3123848">Access to Public Capital Markets and Bank Lending</a></h4>
+              <p class="authors">Chu, Y., and D. Zhao</p>
+              <p class="venue"><em>Real Estate Economics</em> 52(1)</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3123848">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing" data-year="2024">
+            <div class="gutter">2024</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3284549">Inside Job: Evidence from the Chinese Housing Market</a></h4>
+              <p class="authors">Chu, Y., W. Kuang, D. Zhao, and X. Zhou</p>
+              <p class="venue"><em>Journal of Policy Analysis and Management</em> 43(1), 214–233</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3284549">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="politics banking housing" data-year="2022">
+            <div class="gutter">2022</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3286398">Political Influence and Banks: Evidence from Mortgage Lending</a></h4>
+              <p class="authors">Chu, Y., and T. Zhang</p>
+              <p class="venue"><em>Journal of Financial Intermediation</em> 52, 100982</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3286398">SSRN</a>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1042957322000353">Journal</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="climate corporate" data-year="2022">
+            <div class="gutter">2022</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3568723">Venture Capital and Corporate Social Responsibility</a></h4>
+              <p class="authors">Cheng, C., Y. Chu, Z. Deng, and B. Huang</p>
+              <p class="venue"><em>Journal of Corporate Finance</em> 75, 102208</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3568723">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2022">
+            <div class="gutter">2022</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3491994">The JOBS Act and Mergers and Acquisitions</a></h4>
+              <p class="authors">Chu, Y., M. Liu, and S. Zhang</p>
+              <p class="venue"><em>Journal of Corporate Finance</em> 72, 102153</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3491994">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking corporate" data-year="2022">
+            <div class="gutter">2022</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2543618">Banking Relationship, Information Reusability, and Acquisition Loans</a></h4>
+              <p class="authors">Chu, Y., and Z. Li</p>
+              <p class="venue"><em>Journal of Banking and Finance</em> 138, 106449</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2543618">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking housing" data-year="2021">
+            <div class="gutter">2021</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2612918">Option Compensation, Risky Mortgage Lending, and the Financial Crisis</a></h4>
+              <p class="authors">Chu, Y., X. Li, T. Ma, and D. Zhao</p>
+              <p class="venue"><em>Journal of Corporate Finance</em> 70, 102052</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2612918">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2021">
+            <div class="gutter">2021</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2593134">The Dark Side of Shareholder Litigation: Evidence from Corporate Takeovers</a></h4>
+              <p class="authors">Chu, Y., and Y. Zhao</p>
+              <p class="venue"><em>Financial Management</em> 50(3), 845–873</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2593134">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2021">
+            <div class="gutter">2021</div>
+            <div>
+              <h4><a href="https://doi.org/10.1111/1540-6229.12279">Debt Incentives and Bank Risk Taking</a></h4>
+              <p class="authors">Chu, Y., and M. Qiu</p>
+              <p class="venue"><em>Real Estate Economics</em> 49(3), 778–808</p>
+              <div class="links"><a href="https://doi.org/10.1111/1540-6229.12279">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate banking" data-year="2020">
+            <div class="gutter">2020</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2637413">Economic Consequences of FAS 123R: Evidence from Private Loan Contracts</a></h4>
+              <p class="authors">Chu, Y., X. Li, M. Liu, and T. Ma</p>
+              <p class="venue"><em>Journal of Corporate Finance</em> 64, 101683</p>
+              <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2637413">SSRN</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking" data-year="2018">
+            <div class="gutter">2018</div>
+            <div>
+              <h4><a href="https://doi.org/10.1016/j.jfi.2018.03.005">Banking Deregulation and Credit Supply: Distinguishing the Balance Sheet and the Competition Channels</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Journal of Financial Intermediation</em> 35, 102–119</p>
+              <div class="links"><a href="https://doi.org/10.1016/j.jfi.2018.03.005">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate banking" data-year="2017">
+            <div class="gutter">2017</div>
+            <div>
+              <h4><a href="https://doi.org/10.1016/j.jcorpfin.2017.05.005">Shareholder Litigation, Shareholder-Creditor Conflict, and the Cost of Bank Loans</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Journal of Corporate Finance</em> 45, 318–332</p>
+              <div class="links"><a href="https://doi.org/10.1016/j.jcorpfin.2017.05.005">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="corporate" data-year="2017">
+            <div class="gutter">2017</div>
+            <div>
+              <h4><a href="https://doi.org/10.1142/S2010139217500148">Capital Structure along the Supply Chain: How Does Customer Leverage Affect Supplier Leverage Decisions?</a></h4>
+              <p class="authors">Chu, Y., and L. Wang</p>
+              <p class="venue"><em>Quarterly Journal of Finance</em> 7(4)</p>
+              <div class="links"><a href="https://doi.org/10.1142/S2010139217500148">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="banking housing" data-year="2016">
+            <div class="gutter">2016</div>
+            <div>
+              <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2178596">Asset Fire Sales by Banks: Evidence from Commercial REO Sales</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Review of Corporate Finance Studies</em> 5(1), 76–101</p>
+              <div class="links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2178596">SSRN</a>
+                <a href="https://doi.org/10.1093/rcfs/cfv005">Journal</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing corporate" data-year="2016">
+            <div class="gutter">2016</div>
+            <div>
+              <h4><a href="https://doi.org/10.1007/s11146-016-9551-6">A Direct Test of the Free Cash Flow Hypothesis: Evidence from Real Estate Transactions</a></h4>
+              <p class="authors">Chu, Y., and P. Liu</p>
+              <p class="venue"><em>Journal of Real Estate Finance and Economics</em> 52(4), 543–558</p>
+              <div class="links"><a href="https://doi.org/10.1007/s11146-016-9551-6">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing" data-year="2014">
+            <div class="gutter">2014</div>
+            <div>
+              <h4><a href="https://doi.org/10.1016/j.red.2013.06.001">Credit Constraints, Inelastic Supply, and the Housing Boom</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Review of Economic Dynamics</em> 17(1), 52–69</p>
+              <div class="links"><a href="https://doi.org/10.1016/j.red.2013.06.001">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing" data-year="2014">
+            <div class="gutter">2014</div>
+            <div>
+              <h4>Percentage Rents and Stand-Alone Property: Share Contracting as a Barrier to Entry</h4>
+              <p class="authors">Chu, Y., and T. Riddiough</p>
+              <p class="venue"><em>Journal of Real Estate Research</em> 36(1), 1–40 · <span class="note">Lead article</span></p>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="pricing housing" data-year="2010">
+            <div class="gutter">2010</div>
+            <div>
+              <h4><a href="https://doi.org/10.1111/j.1540-6229.2010.00272.x">An Intertemporal Capital Asset Pricing Model with Owner-Occupied Housing</a></h4>
+              <p class="authors">Chu, Y.</p>
+              <p class="venue"><em>Real Estate Economics</em> 38(3), 427–465</p>
+              <div class="links"><a href="https://doi.org/10.1111/j.1540-6229.2010.00272.x">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing" data-year="2007">
+            <div class="gutter">2007</div>
+            <div>
+              <h4><a href="https://doi.org/10.1007/s11146-007-9016-z">Optimal Timing of Real Estate Development under Asymmetric Duopoly</a></h4>
+              <p class="authors">Chu, Y., and T. F. Sing</p>
+              <p class="venue"><em>Journal of Real Estate Finance and Economics</em> 34(3), 327–345</p>
+              <div class="links"><a href="https://doi.org/10.1007/s11146-007-9016-z">Journal</a></div>
+            </div>
+          </li>
+
+          <li class="paper" data-topics="housing pricing" data-year="2004">
+            <div class="gutter">2004</div>
+            <div>
+              <h4>Inflation Hedging Characteristics of Chinese Real Estate Markets</h4>
+              <p class="authors">Chu, Y., and T. F. Sing</p>
+              <p class="venue"><em>Journal of Real Estate Portfolio Management</em> 10(2), 145–154</p>
+            </div>
+          </li>
+        </ol>
+        <p class="empty" data-empty-for="pub-other" hidden>No papers in this group match.</p>
+      </div>
+    </section>
+
+    <!-- ===================== AUDIO ===================== -->
+    <section class="section" id="audio" aria-labelledby="audio-h">
+      <div class="section-head">
+        <h2 id="audio-h">Audio overviews <span class="count">8</span></h2>
+        <p class="lede">AI-generated audio summaries of selected papers, for listening on a commute. Each one opens in Google Drive.</p>
+      </div>
+      <ul class="tracks">
+        <li><a class="track" href="https://drive.google.com/file/d/1RD3tdsTFZC6pIY9MsrGYxRFAM-vf9rd4/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Partisan Loan Officers and the Racial Gap in Mortgage Lending</span><span class="track-meta">Working paper</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/1uEs7deEyV9n6wCJdCQIMW01wZChAamY-/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Political Alignment and Housing Transactions</span><span class="track-meta">Working paper</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/1tPPkzg06j444zA_nh8xXTsR8moCAMkpx/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">The Color of Hedge Fund Activism</span><span class="track-meta">Management Science, 2025</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/1sLDNqHUjmow5XCIchFinqu5QfOfoSxU4/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Gender Diversity: From Wall Street to Main Street</span><span class="track-meta">Journal of Business Ethics, 2023</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/1m79QbphNPRb1W_7ePsWG5VtTXzzKvXwR/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Bank Geographic Diversification and Systemic Risk</span><span class="track-meta">Review of Financial Studies, 2020</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/12ZKzBV1AyoHdqrK_ES5hsehgta1DYf0e/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies</span><span class="track-meta">Journal of Finance, 2020</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/1pRVe79Vmneyf5pNsyNiJNH1sQ3nHUSxJ/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Corporate Innovation along the Supply Chain</span><span class="track-meta">Management Science, 2019</span></span>
+        </a></li>
+        <li><a class="track" href="https://drive.google.com/file/d/17dHIl5CR7eDABtzsohtlEGhiZy1PYyqQ/view">
+          <span class="play"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10l8.5-5z" fill="currentColor"/></svg></span>
+          <span><span class="track-title">Shareholder-Creditor Conflict and Payout Policy</span><span class="track-meta">Review of Financial Studies, 2018</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <!-- ===================== STUDENTS ===================== -->
+    <section class="section" id="students" aria-labelledby="students-h">
+      <div class="section-head">
+        <h2 id="students-h">Ph.D. students advised</h2>
+        <p class="lede">With first academic placement.</p>
+      </div>
+      <ul class="students">
+        <li><strong>Liying Wang</strong><span>University of Nebraska–Lincoln</span></li>
+        <li><strong>Chia-Chun (Cici) Chiang</strong><span>University of Texas at El Paso</span></li>
+        <li><strong>Gerard Pinto</strong><span>Drew University</span></li>
+        <li><strong>Jin Cai</strong><span>Sacred Heart University</span></li>
+        <li><strong>Yafei Zhang</strong><span>University of Manchester</span></li>
+        <li><strong>Xiaonan Ma</strong><span>Washington State University</span></li>
+        <li><strong>Chen Shen</strong><span>Ontario Tech University · co-chair</span></li>
+      </ul>
+    </section>
+
+    <!-- ===================== CV & CONTACT ===================== -->
+    <section class="section" id="cv" aria-labelledby="cv-h">
+      <div class="section-head">
+        <h2 id="cv-h">CV &amp; contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <h3>Curriculum vitae</h3>
+          <p>Employment, publications, presentations, students, and service.</p>
+          <p><a class="btn btn-primary" href="cv.pdf">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 1.75h5.5L13 5.25v9H4z"/><path d="M9.25 1.75v3.75H13"/><path d="M6.25 9h4.5M6.25 11.5h4.5"/></svg>
+            Download CV (PDF, June 2026)
+          </a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p class="email"><a href="mailto:yongqiang.chu@uncc.edu">yongqiang.chu@uncc.edu</a></p>
+          <address>
+            <p>Belk College of Business<br>
+            University of North Carolina at Charlotte<br>
+            9201 University City Blvd<br>
+            Charlotte, NC 28223</p>
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yongqiang Chu</span>
+    <span>Last updated November 2026</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.paper[data-topics]'));
+  var lists = Array.prototype.slice.call(document.querySelectorAll('ol.papers'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-topic]'));
+  var input = document.getElementById('q');
+  var status = document.getElementById('filter-status');
+  var reset = document.getElementById('reset');
+  var topic = 'all';
+
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function topicsOf(li) { return li.getAttribute('data-topics').split(/\s+/); }
+
+  items.forEach(function (li) { li._text = norm(li.textContent); });
+
+  chips.forEach(function (chip) {
+    var t = chip.getAttribute('data-topic');
+    var n = t === 'all' ? items.length : items.filter(function (li) { return topicsOf(li).indexOf(t) !== -1; }).length;
+    var slot = chip.querySelector('.n');
+    if (slot) slot.textContent = n;
+  });
+
+  function apply() {
+    var term = norm(input.value.trim());
+    var shown = 0;
+    items.forEach(function (li) {
+      var ok = (topic === 'all' || topicsOf(li).indexOf(topic) !== -1) && (!term || li._text.indexOf(term) !== -1);
+      li.hidden = !ok;
+      if (ok) shown++;
+    });
+    lists.forEach(function (list) {
+      var all = Array.prototype.slice.call(list.children);
+      var vis = all.filter(function (li) { return !li.hidden; });
+      var count = document.querySelector('[data-count-for="' + list.id + '"]');
+      if (count) count.textContent = vis.length === all.length ? all.length : vis.length + ' of ' + all.length;
+      var empty = document.querySelector('[data-empty-for="' + list.id + '"]');
+      if (empty) empty.hidden = vis.length > 0;
+      var prev = null;
+      vis.forEach(function (li) {
+        var y = li.getAttribute('data-year');
+        li.classList.toggle('repeat', !!y && y === prev);
+        prev = y;
+      });
+    });
+    var filtered = topic !== 'all' || term !== '';
+    status.textContent = filtered ? shown + ' of ' + items.length + ' papers' : items.length + ' papers';
+    reset.hidden = !filtered;
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      topic = chip.getAttribute('data-topic');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      apply();
+    });
+  });
+  input.addEventListener('input', apply);
+  reset.addEventListener('click', function () {
+    input.value = '';
+    topic = 'all';
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.getAttribute('data-topic') === 'all')); });
+    apply();
+    input.focus();
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
